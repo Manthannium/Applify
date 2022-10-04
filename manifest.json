@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Applify",
+    "description": "Applify the google",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/pic.png",
+        "48": "/images/pic.png",
+        "128": "/images/pic.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/pic.png",
+            "48": "/images/pic.png",
+            "128": "/images/pic.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "css": ["main.css"]
+        }
+    ]
+}
